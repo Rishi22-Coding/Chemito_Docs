@@ -1,0 +1,68 @@
+For example :  As shown below you can make changes as per your requirement. So you can change word blink to scroll or any effect you want.  
+
+1.For blinking:
+
+{
+   "function": "SHOW_SCREEN",
+   "message_id": 1,
+   "priority":0,
+   "timeOut":10,
+   "screenType":"Emergency",
+   "screen":[
+{
+         "itemType":"screenItem",
+         "id":1,
+         "geometry":{
+            "xPosition":0,
+            "yPosition":0,
+            "width":1920,
+            "height":1080,
+    "color":"black"
+},
+         "content":[
+    {
+               "itemType":"rectItem",
+               "geometry":{
+                  "xPosition":0,
+                  "yPosition":0,
+                  "width":1920,
+                  "height":200
+},
+               "color":"blue",
+               "borderWidth":0,
+               "borderColor":"black"
+},
+            {
+               "itemType":"textItem",
+               "geometry":{
+                  "xPosition":0,
+                  "yPosition":0,
+                  "width":1920,
+                  "height":200
+},
+               "font":{
+                  "fontName":"Arial Unicode MS",
+                  "fontSize":100,
+                  "fontColor":"white",
+                  "fontWeight":"bold",
+                  "fontStyle":"normal"
+
+},
+               "alignment":"center",
+               "effect":"blink",
+               "speed":0,
+               "text":"Welcome"
+
+}   ]
+}   ]
+}  
+
+Effects :
+1.Blinking : blink 
+2.Freez : freez
+3.Scroll :  scroll 
+4.Scroll right : scroll-right
+5.Scroll up : scroll-up
+6.Scroll Down : scroll-down
+7.Fade in : fade-in
+8.Fed out : fade-out
